@@ -7,13 +7,16 @@
     "eslint:recommended",
     "standard",
     "prettier",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
     "plugin:@typescript-eslint/recommended"
   ],
-  "plugins": ["@typescript-eslint"],
+  "plugins": [ "@typescript-eslint", "jest" ],
   "env": {
     "es6": true,
     "node": true,
-    "jest": true
+    "jest": true,
+    "jest/globals": true
   },
   "ignorePatterns": ["dist", "node_modules", "examples", "scripts"],
   "rules": {
