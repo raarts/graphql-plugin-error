@@ -1,5 +1,6 @@
 import * as React from 'react';
 import renderer from 'react-test-renderer';
+import '../../__tests__/matchMedia';
 
 import { MonoText } from '../StyledText';
 
