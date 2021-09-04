@@ -5,11 +5,13 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 import Colors from '../constants/Colors';
 import { MonoText } from './StyledText';
 import { Text, View } from './Themed';
+import { DarkMode } from './DarkMode';
 
 export default function EditScreenInfo({ path }: { path: string }): React.ReactElement {
   return (
     <View>
       <View style={styles.getStartedContainer}>
+        <DarkMode />
         <Text style={styles.getStartedText} lightColor="rgba(0,0,0,0.8)" darkColor="rgba(255,255,255,0.8)">
           Open up the code for this screen:
         </Text>
